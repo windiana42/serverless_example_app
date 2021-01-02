@@ -80,7 +80,7 @@ class TheApp extends React.Component {
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Container className="app">
                     <Navbar bg="light" expand="lg">
-                        <Navbar.Brand href="/">Serverless Example</Navbar.Brand>
+                        <Navbar.Brand href={process.env.PUBLIC_URL}>Serverless Example</Navbar.Brand>
                         <NavDropdown title="Lang" id="basic-nav-dropdown">
                             <NavDropdown.Item onClick={() => changeLanguage('en')}>en</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => changeLanguage('de')}>de</NavDropdown.Item>
